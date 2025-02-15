@@ -1,4 +1,3 @@
-// Horizontal movement
 hsp = 0;
 if (keyboard_check(vk_left) && !is_ducking) hsp = -walk_speed;
 if (keyboard_check(vk_right) && !is_ducking) hsp = walk_speed;
@@ -35,8 +34,12 @@ if (!place_meeting(x + hsp, y, obj_solid)) {
     x += hsp;
 }
 
-if (!place_meeting(x, y + vsp, obj_solid)) { 
-    y += vsp;
-} else {
-    vsp = 0;
+if (place_meeting(x, y + 1, obj_halfslope)) {
+    if (keyboard_check(vk_up) || keyboard_check(vk_space)) {
+        vertical_speed = -4;
+    } else {
+        vertical_speed = 5;
+    }
 }
+
+y += vertical_speed;

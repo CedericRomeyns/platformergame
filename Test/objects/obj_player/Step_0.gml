@@ -7,7 +7,7 @@ if (keyboard_check(vk_down) && is_on_ground) {
 } else {
     is_ducking = false;
 }
-if (keyboard_check(vk_up) && is_on_ground && !is_ducking && !jump_held) {
+if (keyboard_check(vk_space) && is_on_ground) {
     vsp = jump_power;
     is_on_ground = false;
     jump_held = true;

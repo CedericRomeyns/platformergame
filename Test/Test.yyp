@@ -51,10 +51,10 @@
     {"id":{"name":"spr_filler","path":"sprites/spr_filler/spr_filler.yy",},},
     {"id":{"name":"obj_filler","path":"objects/obj_filler/obj_filler.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Test","path":"rooms/Test/Test.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
